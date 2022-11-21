@@ -1,0 +1,542 @@
+:root{
+    --text-color:#696871;
+    --head-color:#19191b;
+    --orange:#ff7143;
+    --orange-hover:#fa5923;
+    --blue:#5454d4;
+    --blue-hover:#3232d9;
+    --light-grey:#eae9f2;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+menu {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset,
+img,
+abbr {
+    border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ul li {
+    list-style: none;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+legend {
+    color: #000;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+html,body{
+    background: white;
+   
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+ flex-wrap: wrap;
+    margin: 0 -16px;
+}
+.col{
+    margin: 0 16px;
+}
+
+.between{
+    
+    justify-content: space-between;
+}
+
+h1, h2, h3{
+  font-family: 'DM Sans', sans-serif; 
+  color: var(--head-color);
+}
+h1{
+    font-size: 80px;
+    margin-bottom: 32px;
+    line-height: 1em;
+}
+h2{
+    font-size: 50px;
+    margin-bottom: 32px;
+}
+h3{
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+a{
+    font-family: 'DM Sans', sans-serif;
+}
+#header .row{
+    align-items: center;
+    height: 106px;
+}
+.logo a{
+    background: url(../img/logo.svg) center no-repeat;
+    width: 200px;
+    height: 40px;
+    display: block;
+}
+
+.menu{
+    width: 328px;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+}
+.menu a{
+    
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 16px;
+    box-sizing: border-box;
+    color: var(--text-color);
+    height: 40px;
+    line-height: 2.4em;
+    display: block;
+  
+}
+.menu a:hover{
+    color: var(--head-color);
+}
+
+.menu li a:after{
+content: "";
+background: var(--blue);
+width: 0;
+height: 2px;
+display: block;
+transition: width 0.4s ease-in-out;
+}
+.menu li:hover a:after{
+width: 100%;
+}
+
+.button a , .button input{
+    width: 100%;
+    height: 44px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    transition: background 0.4s ease-in-out;
+    border:none;
+    cursor: pointer;
+}
+
+.button a {
+    background: var(--orange);
+    width: 210px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 2.6em;
+}
+.button a:hover{
+background: var(--orange-hover);
+}
+.blue a , .blue input{
+  background: var(--blue);
+}
+.blue a:hover, .blue input:hover{
+    background: var(--blue-hover);
+}
+
+.hero_text{
+    width: calc(50% - 32px);
+    height: 644px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero_text p {
+    margin-bottom: 32px;
+}
+.arrow a {
+    background: url(../img/arrow-down.svg) center no-repeat;
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--light-grey);
+    display: block;
+    border-radius: 50%;
+}
+
+.hero_3d{
+    position: relative;
+    width: calc( 50% - 32px);
+}
+
+.img{
+    position: absolute;
+}
+
+.stand{
+    
+    left: 56px;
+    top: 116px;
+}
+
+.pose{
+    top: 0;
+    left: 0;
+}
+
+.bubble{
+    left: 380px;
+    top: 420px;
+}
+
+.partner{
+    width: 126px;
+    height: 48px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ball{
+background-image: url(../img/ball.svg);
+}
+.piramides{
+    background-image: url(../img/piramides.svg);
+}
+
+.figures{
+    background-image: url(../img/figures.svg);
+}
+
+.burger {
+    background-image: url(../img/burger.svg);
+}
+
+.amongus{
+    background-image: url(../img/amongus.svg);
+}
+
+#piechart, #barchart, #benefits {
+    padding: 64px 0;
+}
+
+.chart_img {
+    width: calc(50% - 32px);
+    position: relative;
+}
+
+.piechart {
+    left: 120px;
+    top: 74px;
+}
+
+.pose_piechart {
+    left: 294px;
+    top: 0;
+}
+.chart_text{
+width: calc(50% - 32px);
+display: flex;
+flex-direction: column;
+justify-content: center;
+height: 474px;
+}
+.chart_text p{
+    margin-bottom:32px;
+}
+.link{
+    font-family: 'DM Sans', sans-serif; 
+    font-weight: bold;
+    font-size: 17px;
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.barchart{
+    left: 260px;
+    top: 20px;
+}
+
+.pose_barchart{
+    left: 120px;
+    top: 0;
+}
+
+.benefit{
+    width: calc(100% / 3 - 32px);
+    text-align: center;
+}
+
+.benefit img{
+    width: auto;
+    height: 84px;
+    margin-bottom: 16px;
+}
+
+#plans{
+    margin-bottom: 64px;
+}
+
+#plans h2{
+    width: calc(50% - 16px);
+    margin-bottom: 64px;
+}
+
+#plans .tarifs_tabs{
+    background: var(--light-grey);
+    width: 346px;
+    height: 65px;
+    border-radius: 8px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#plans .tarifs_tabs .tarifs_tabs_title{
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+    font-family:'DM Sans', sans-serif ;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 4em;
+    color: #19191b;
+    transition: background 0.4s ease-in-out;
+}
+
+#plans .tarifs_tabs .tarifs_tabs_title.active{
+    background: var(--blue);
+    color: white;
+    pointer-events: none;
+}
+
+#plans .tarifs_tabs .tarifs_tabs_title:hover{
+   background: var(--blue-hover);
+   color: white;
+}
+
+#plans .tarifs_tabs .tarifs_tabs_title.left{
+    border-radius: 8px 0 0 8px;
+}
+    
+
+#plans .tarifs_tabs .tarifs_tabs_title.right{
+    border-radius: 0 8px 8px 0;
+}
+
+#plans .plan{
+    background: var(--light-grey);
+    border-radius: 8px;
+    width: calc(100% / 3 - 32px);
+    padding: 40px 24px;
+    box-sizing: border-box;
+    font-family:'DM Sans', sans-serif ;
+    text-align: center;
+    transition: margin 0.4s ease-in-out;
+}
+
+#plans .plan:hover{
+    background: var(--orange);
+    color: white;
+    margin-top: -24px;
+}
+
+#plans .plan .plam_name{
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+
+#plans .plan .price{
+    font-weight: bold;
+    color: #1d293f;
+    margin-bottom: 24px;
+}
+    
+#plans .plan:hover .price{
+    color: white;
+}
+
+#plans .plan .price span{
+    font-size: 60px;
+}
+
+#plans .plan .price .during{
+    font-size: 28px;
+}
+#plans .plan .description{
+    font-family: 'Mulish', sans-serif;
+    font-size: 17px;
+    margin-bottom: 24px;
+}
+
+#plans .plan .button a {
+    background: white;
+    margin: 0 auto;
+    color: var(--blue);
+}
+
+#plans .plan:hover .button a{
+    color: var(--orange-hover);
+}
+
+#contact .form{
+    position: relative;
+    width: calc(100% - 32px);
+}
+
+#contact .order{
+    background: white;
+    border-radius: 8px;
+    padding: 40px;
+    position: absolute;
+    right: 0;
+    top: 24px;
+    z-index: 100;
+}
+
+.order h3{
+    text-align: center;
+}
+
+.input_field , .text_field{
+    margin-bottom: 32px;
+}
+ 
+input,textarea{
+    font-family: inherit;
+    font-size: 16px;
+}
+.input_field input , .text_field textarea{
+    width: 100%;
+    height: 44px;
+    border-radius: 8px;
+    border: 1px solid var(--head-color);
+    padding: 0 16px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.text_field textarea{
+    height: 100px;
+    padding: 16px;
+    resize: none;
+}
+
+#footer{
+    padding: 40px 0;
+}
+
+.copyright{
+    width: calc(100% - 32px);
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.social_icons{
+    width: calc(100% - 32px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.social_icons a{
+    width: 32px;
+    height: 32px;
+    display: block;
+    margin: 0 8px;
+}
